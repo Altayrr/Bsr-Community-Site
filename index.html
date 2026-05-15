@@ -162,6 +162,40 @@
     padding: 30px 20px;
   }
 
+  .ad-slot {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 90px;
+    padding: 12px 20px 2px;
+    overflow: hidden;
+  }
+
+  .ad-slot::before {
+    content: "Sponsored";
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cinzel', serif;
+    font-size: 7px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(106,122,146,0.72);
+  }
+
+  .ad-slot-inner {
+    width: 728px;
+    max-width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.86;
+  }
+
   .filter-bars-container {
     display: flex; justify-content: space-between; align-items: center;
     width: 100%; max-width: 1400px;
@@ -865,6 +899,21 @@
   <button class="div-tab" onclick="setCategoryFilter('espada', this)">Espada</button>
   <button class="div-tab" onclick="setCategoryFilter('karakura', this)">Karakura Town</button>
   <button class="div-tab" onclick="setCategoryFilter('quincy', this)">Quincy</button>
+</div>
+
+<div class="ad-slot" aria-label="Sponsored advertisement">
+  <div class="ad-slot-inner">
+    <script>
+      atOptions = {
+        'key' : 'da32ef653f56e2c7d961519c51179c4d',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/da32ef653f56e2c7d961519c51179c4d/invoke.js"></script>
+  </div>
 </div>
 
 <main id="stage">

@@ -110,6 +110,41 @@ const mobileCss = String.raw`
       align-items: stretch;
     }
 
+    .ad-slot {
+      position: relative;
+      z-index: 49;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 50px;
+      padding: 10px 10px 2px;
+      overflow: hidden;
+      background: rgba(2,3,6,0.5);
+    }
+
+    .ad-slot::before {
+      content: "Sponsored";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Cinzel', serif;
+      font-size: 6px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(106,122,146,0.7);
+    }
+
+    .ad-slot-inner {
+      width: 320px;
+      max-width: 100%;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.86;
+    }
+
     .filter-bars-container {
       position: sticky;
       top: calc(78px + env(safe-area-inset-top));
@@ -334,6 +369,23 @@ const mobileCss = String.raw`
   }
 `;
 
+const mobileAd = String.raw`
+<div class="ad-slot" aria-label="Sponsored advertisement">
+  <div class="ad-slot-inner">
+    <script>
+      atOptions = {
+        'key' : '96fa16e718e78ba9fc6e4b7a947a158b',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    <\/script>
+    <script src="https://www.highperformanceformat.com/96fa16e718e78ba9fc6e4b7a947a158b/invoke.js"><\/script>
+  </div>
+</div>
+`;
+
 const mobileScript = String.raw`
 <script>
 (function enablePhoneFriendlyInteractions() {
@@ -362,6 +414,8 @@ fetch(desktopSource, { cache: 'no-store' })
   .then(function(html) {
     html = html.replace(/<title>(.*?)<\/title>/i, '<title>BLEACH - Soul Resonance Archives Mobile</title>');
     html = html.replace('</style>', mobileCss + '\n</style>');
+    html = html.replace(/<script src="https:\/\/pl29460104\.effectivecpmnetwork\.com\/[^"]+"><\/script>\s*/i, '');
+    html = html.replace(/<\/div>\s*<main id="stage">/, '</div>\n' + mobileAd + '\n<main id="stage">');
     html = html.replace('</body>', mobileScript + '\n</body>');
     document.open();
     document.write(html);
