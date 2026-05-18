@@ -1182,18 +1182,18 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Strike DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>Each time 1 point of <span style="color: #EA4A86; text-decoration: underline;">Deathmark</span> is consumed, Soi Fon gains 1 stack of intuition, increasing her Technique DMG by <span style="color: #52C394;">2.5%</span>. This effect stacks up to 10 times, and upon reaching 10 stacks, her Ultimate also gains a <span style="color: #52C394;">150%</span> Crit DMG Bonus.<br>When her Ultimate lands a critical hit, it immediately triggers an extra <span style="color: #EA4A86; text-decoration: underline;">Sting</span> equal to <span style="color: #52C394;">750%</span> of Soi Fon\'s ATK.<br>After her Ultimate hits an enemy, all damage the target takes afterward is increases by <span style="color: #52C394;">10%</span> for 30 seconds.<br>Increases Ultimate DMG by <span style="color: #52C394;">30%</span>.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Strike DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>No Data.                                                                                                                                                                                                                                                                                                                                                                             </p>'
         }
       },
       {
@@ -1597,7 +1597,7 @@ const CHARACTERS = [
     setStampGaps: [30, 60],
     setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Slash DMG Bonus%<br>2) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%>CR%>CDMG%>ATK%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crit Rate%<br>2) Crit DMG%</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%>CR%>CDMG%>ATK%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ultimate Charge Rate%%</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%>CR%>CDMG%>ATK%</p>'],
     setStampPopupWidths: [380, 380, 380],
-    setStampAfterText: '<p><span style="color: #EA4A86;">Blooming Sakura (3/3) </span><br>2-Piece: Increases Ultimate Charge Rate by <span style="color: #52C394;">22%</span>.<br>3-Piece:  Increases Battlefield Skill DMG by <span style="color: #52C394;">30%</span>. Each time a Battlefield Skill is released, increases basic attack DMG by <span style="color: #52C394;">6%</span> for 15s. Stacks up to 6 times.</p>',
+    setStampAfterText: '<p><span style="color: #EA4A86;">Blooming Sakura (3/3) </span><br>2-Piece: Increases Ultimate Charge Rate by <span style="color: #52C394;">22%</span>.<br>3-Piece: Increases Battlefield Skill DMG by <span style="color: #52C394;">30%</span>. Each time a Battlefield Skill is released, increases basic attack DMG by <span style="color: #52C394;">6%</span> for 15s. Stacks up to 6 times.</p>',
 
     weaponStampImgs: ['images/byakuya weapon.webp', 'images/byakuya weapon 2.webp'],
     weaponStampAngles: [0, 5],
@@ -1688,12 +1688,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/mayuri core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
+    coreStampImgs: ['images/mayuri core.webp', 'images/mayuri core 2.webp'],
     coreStampAngles: [-2, 1, 3],
-    coreStampGaps: [80, 80],
+    coreStampGaps: [150, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Curious About You',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -1701,102 +1701,79 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Thrust DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-Increases Ultimate DMG by <span style="color: #52C394;">75%</span>.<br>-Each stack of <span style="color: #EA4A86; text-decoration: underline;">Excitement</span> grants an extra <span style="color: #52C394;">5%</span> ATK to the entire team.<br>-The Crit DMG granted by Terror is additionally increased by <span style="color: #52C394;">80%</span>.<br>-When receiving fatal damage, transforms into a puddle of green liquid and revives after a short while with full Spiritual Pressure and Ultimate Energy.<br>Cooldown: 120 seconds.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Thrust DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>No Data.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   l</p>'
         }
       },
       {
-        name: 'Lesson Three Cleared!',
-		dividerColor: 'null',
-        stars: 5,
-        base: {
-          rows: [
-            { label: 'ATK', value: '113' },
-            { label: 'DEF', value: '94' },
-            { label: 'HP', value: '566' },
-            { label: 'All-Type DMG Bonus', value: '7.2%' }
-          ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">8%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
-        },
-        max: {
-          rows: [
-            { label: 'ATK', value: '488' },
-            { label: 'DEF', value: '407' },
-            { label: 'HP', value: '2443' },
-            { label: 'All-Type DMG Bonus', value: '15.3%' }
-          ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">16%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
-        }
-      },
-      {
-        name: 'Back-to-Back Combat',
-        dividerColor: '#8f5cff',
+        name: 'It\'s My Turn Now',
+		dividerColor: '#8f5cff',
         stars: 4,
         base: {
           rows: [
             { label: 'ATK', value: '100' },
             { label: 'DEF', value: '83' },
             { label: 'HP', value: '503' },
-            { label: 'All-Type DMG Bonus', value: '6.4%' }
+            { label: 'HP', value: '9.6%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>After releasing an Ultimate, the entire team gain a <span style="color: #52C394;">6%</span> boost for Base ATK that lasts for <span style="color: #52C394;">25</span>s. Unstackable.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '365' },
             { label: 'DEF', value: '304' },
             { label: 'HP', value: '1824' },
-            { label: 'All-Type DMG Bonus', value: '11.2%' }
+            { label: 'HP', value: '16.8%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>After releasing an Ultimate, the entire team gain a <span style="color: #52C394;">12%</span> boost for Base ATK that lasts for <span style="color: #52C394;">25</span>s. Unstackable.</p>'
         }
-      }
+      },
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
+    setStampBeforeText: '<p><span style="color: #EA4A86;">-The recommended passives for Mayuri Kurotsuchi - Thrust are:</span><br>1) Invigorate - Support<br>2) Invigorate - Tactic<br>3) Restrain<br>4) Invigorate</p><p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>At B4 Mayuri wants <span style="color: #52C394;">250%</span> ultimate charge rate to max his passive to provide <span style="color: #52C394;">50%</span> more ailment bonus.</p>',
     setStampImgs: ['images/mayuri set 1.webp', 'images/mayuri set 2.webp', 'images/mayuri set 3.webp'],
     setStampAngles: [0, 0, -3],
     setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>Stats here do not matter, follow Substats for Priority.</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%(Up to <span style="color: #52C394;">230%+</span>)>Ailment%>Anything</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>Stats here do not matter, follow Substats for Priority.</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%(Up to <span style="color: #52C394;">230%+</span>)>Ailment%>Anything</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ult Charge Rate%</p><p><span style="color: #EA4A86;">-Substats:</span><br>Ult%(Up to <span style="color: #52C394;">230%+</span>)>Ailment%>Anything</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">Sample Collection (3/3) </span><br>2-Piece: Increases Ultimate Charge Rate by <span style="color: #52C394;">22%</span>.<br>3-Piece: Each time Poison is inflicted on an enemy, the entire team\'s ATK is increased by <span style="color: #52C394;">5%</span> for 30 seconds, stacking up to 3 times.</p>',
 
-    weaponStampImgs: ['images/mayuri weapon.webp', 'images/aizen weapon 2.webp'],
-    weaponStampAngles: [-3, 5],
+    weaponStampImgs: ['images/mayuri weapon.webp', 'images/byakuya weapon 2.webp'],
+    weaponStampAngles: [0, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'Wipe Out',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kurotsuchi Mayuri Exclusive Effect',
+          text: '<p>No Data.                                                                                                                                                                                                                                                                                                                                                                                                                                 </p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kurotsuchi Mayuri Exclusive Effect',
+          text: '<p>No Data.                                                                                                                                                                                                                                                                                                                                                                                                                                 </p>'
         }
       },
       {
-        name: 'Chanting Spirit',
+        name: 'Method',
 		dividerColor: '#8f5cff',
         stars: 0,
         base: {
@@ -1804,29 +1781,29 @@ const CHARACTERS = [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After releasing a technique, the entire team is buffed with a <span style="color: #52C394;">6%</span> increase in Base ATK that lasts for 25s.<br>Unstackable.</p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After releasing a technique, the entire team is buffed with a <span style="color: #52C394;">12%</span> increase in Base ATK that lasts for 25s.<br>Unstackable.</p>'
         }
       },
     ],
     weaponStampPopupWidths: [null, null],
 
-    bonds1Imgs: ['images/aizen bond 1.webp'],
-    bonds1Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: green;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: green;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches <span style="color: green;">20% / 40% / 60%</span>.</div>`,
-    bonds1OffsetX: 10,
+    bonds1Imgs: ['images/mayuri bond 1.webp'],
+    bonds1Info: `<div style="text-align: center; font-weight: bold;">During battle, teammates other than yourself gain <span style="color: #52C394;">16%</span> Crit DMG.<br>Unstackable.</div>`,
+    bonds1OffsetX: 14,
     bonds1Height: 120,
     bonds1PopupWidth: 480,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
+    bonds2Imgs: ['images/mayuri bond 2.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases ATK of all team characters during battle by <span style="color: #52C394;">6%</span>.</div>`,
     bonds2OffsetX: 14,
-    bonds2Height: 124,
+    bonds2Height: 119,
     bonds2PopupWidth: 430
   },
   {
@@ -1861,12 +1838,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/sajin core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
+    coreStampImgs: ['images/sajin core.webp', 'images/aizen core 2.webp', 'images/gin core 3.webp'],
     coreStampAngles: [-2, 1, 3],
     coreStampGaps: [80, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Devoted Valor',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -1874,18 +1851,18 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Strike DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-Releasing the Battlefield Skill Tenken Ascension - Charged Strike reduces the Strike Resistance of all enemies by <span style="color: #52C394;">6%</span>, and by an extra <span style="color: #52C394;">6%</span> if at least 10 stacks of <span style="color: #EA4A86; text-decoration: underline;">Build Up</span> are consumed. Lasts for 20s.<br>-Increases all Battlefield Skill DMG by <span style="color: #52C394;">50%</span>.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Strike DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>No Data.</p>'
         }
       },
       {
@@ -1912,7 +1889,7 @@ const CHARACTERS = [
         }
       },
       {
-        name: 'Back-to-Back Combat',
+        name: 'Still Want To Fight?',
         dividerColor: '#8f5cff',
         stars: 4,
         base: {
@@ -1922,7 +1899,7 @@ const CHARACTERS = [
             { label: 'HP', value: '503' },
             { label: 'All-Type DMG Bonus', value: '6.4%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Technique is dealt, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">33%</span> of the current Technique.</p>'
         },
         max: {
           rows: [
@@ -1931,45 +1908,45 @@ const CHARACTERS = [
             { label: 'HP', value: '1824' },
             { label: 'All-Type DMG Bonus', value: '11.2%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Technique is dealt, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">66%</span> of the current Technique.</p>'
         }
       }
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
+    setStampBeforeText: '<p><span style="color: #EA4A86;">-NOTE:</span> Please do not six star the stamps of Sajin Komammura - Strike, just wait for a worthy character to six star.<p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>Build does not change with dupes..</p></p>',
     setStampImgs: ['images/sajin set 1.webp', 'images/sajin set 2.webp', 'images/sajin set 3.webp'],
     setStampAngles: [0, 0, -3],
     setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Strike DMG Bonus%<br>2) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > HP%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crite Rate%<br>2) Crit DMG%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > HP%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ult Charge Rate%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > HP%</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">Inner Fang (3/3) </span><br>2-Piece: Increases Base ATK by <span style="color: #52C394;">16%</span>.<br>3-Piece: Each time a Battlefield Skill deals DMG, increases the next Battlefield Skill DMG by <span style="color: #52C394;">12%</span> for <span style="color: #52C394;">10</span>s. Stacks up to 5 times.</p>',
 
-    weaponStampImgs: ['images/sajin weapon.webp', 'images/aizen weapon 2.webp'],
+    weaponStampImgs: ['images/sajin weapon.webp', 'images/sajin weapon 2.webp'],
     weaponStampAngles: [-3, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'Dark Armor',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Sajin Komamura Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-After Komamura releases his technique, quickly tap the basic attack button for a follow-up attack which deals DMG equal to <span style="color: #52C394;">400%</span> of ATK and grants 1 stack of <span style="color: #EA4A86; text-decoration: underline;">Build Up</span>. This attack counts as a technique.<br>-When the follow-up attack hits an enemy, their Strike Resistance is reduced y an extra <span style="color: #52C394;">10%</span>. Lasts for 30s.</p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Sajin Komamura Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-After Komamura releases his technique, quickly tap the basic attack button for a follow-up attack which deals DMG equal to <span style="color: #52C394;">800%</span> of ATK and grants 1 stack of <span style="color: #EA4A86; text-decoration: underline;">Build Up</span>. This attack counts as a technique.<br>-When the follow-up attack hits an enemy, their Strike Resistance is reduced y an extra <span style="color: #52C394;">20%</span>. Lasts for 30s.</p>'
         }
       },
       {
-        name: 'Chanting Spirit',
+        name: 'Power Strike',
 		dividerColor: '#8f5cff',
         stars: 0,
         base: {
@@ -1977,29 +1954,29 @@ const CHARACTERS = [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Strike DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Strike DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
         }
       },
     ],
     weaponStampPopupWidths: [null, null],
 
-    bonds1Imgs: ['images/aizen bond 1.webp'],
-    bonds1Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: green;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: green;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches <span style="color: green;">20% / 40% / 60%</span>.</div>`,
+    bonds1Imgs: ['images/byakuya bond 2.webp'],
+    bonds1Info: `<div style="text-align: center; font-weight: bold;">Increases Battlefield Skill DMG by <span style="color: #52C394;">37.5%</span> during battle. Only effective on <span style="color: #ffaa00;">Tactic</span> characters.</div>`,
     bonds1OffsetX: 10,
-    bonds1Height: 120,
+    bonds1Height: 121,
     bonds1PopupWidth: 480,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
+    bonds2Imgs: ['images/sajin bond 2.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases All-Type DMG during battle by <span style="color: #52C394;">15%</span>.</div>`,
     bonds2OffsetX: 14,
-    bonds2Height: 124,
+    bonds2Height: 122,
     bonds2PopupWidth: 430
   },
   {
@@ -2034,12 +2011,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/tosen core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
-    coreStampAngles: [-2, 1, 3],
+    coreStampImgs: ['images/tosen core.webp', 'images/aizen core 2.webp', 'images/tosen core 3.webp'],
+    coreStampAngles: [-1, 0, 3],
     coreStampGaps: [80, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Way Of Justice',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -2047,18 +2024,18 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Thrust DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-Increases Ultimate DMG by <span style="color: #52C394;">30%</span>.<br>-When the Ultimate is released, all enemies within the domain immediately receive <span style="color: #52C394;">10%</span> more Thrust DMG. Each stack of <span style="color: #EA4A86; text-decoration: underline;">Wound</span> on the enemy increases this effect by an extra <span style="color: #52C394;">1%</span>, up to <span style="color: #52C394;">20%</span>. Lasts for 25s.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Thrust DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>-Increases Ultimate DMG by <span style="color: #52C394;">60%</span>.<br>-When the Ultimate is released, all enemies within the domain immediately receive <span style="color: #52C394;">20%</span> more Thrust DMG. Each stack of <span style="color: #EA4A86; text-decoration: underline;">Wound</span> on the enemy increases this effect by an extra <span style="color: #52C394;">1%</span>, up to <span style="color: #52C394;">20%</span>. Lasts for 25s.</p>'
         }
       },
       {
@@ -2085,7 +2062,7 @@ const CHARACTERS = [
         }
       },
       {
-        name: 'Back-to-Back Combat',
+        name: 'Rushing Into Danger',
         dividerColor: '#8f5cff',
         stars: 4,
         base: {
@@ -2095,7 +2072,7 @@ const CHARACTERS = [
             { label: 'HP', value: '503' },
             { label: 'All-Type DMG Bonus', value: '6.4%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Ultimate.</p>'
         },
         max: {
           rows: [
@@ -2104,41 +2081,41 @@ const CHARACTERS = [
             { label: 'HP', value: '1824' },
             { label: 'All-Type DMG Bonus', value: '11.2%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Ultimate.</p>'
         }
       }
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
-    setStampImgs: ['images/tosen set 1.webp', 'images/tosen set 2.webp', 'images/tosen set 3.webp'],
+    setStampBeforeText: '<p><span style="color: #EA4A86;">-The recommended passives for Kaname Tosen - Thrust are:</span><br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Tachnique<br>4) Enhanced Ultimate</p><p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>Build does not change with dupes.</p>',
+    setStampImgs: ['images/gin set 1.webp', 'images/gin set 2.webp', 'images/gin set 3.webp'],
     setStampAngles: [0, 0, -3],
     setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) ATK%<br>2) Thrust DMG Bonus%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > Ailment DMG Bonus > ATK% > ATK > Ult%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crit Rate%<br>2) Crit Dmg%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > Ailment DMG Bonus > ATK% > ATK > Ult%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ailment DMG Bonus%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > Ailment DMG Bonus > ATK% > ATK > Ult%</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">Mocking Visage (3/3) </span><br>2-Piece: Increases Ailment DMG by <span style="color: #52C394;">50%</span>.<br>3-Piece: Each time a debuff on an enemy is triggered, the character\'s Thrust DMG is increased by <span style="color: #52C394;">1.5%</span> for 10 seconds. Stacks up to 10 times. Upon reaching 10 stacks, Technique DMG and Ultimate DMG are increased by <span style="color: #52C394;">25%</span> and <span style="color: #52C394;">25%</span>, respectively.</p>',
 
     weaponStampImgs: ['images/tosen weapon.webp', 'images/aizen weapon 2.webp'],
-    weaponStampAngles: [-3, 5],
+    weaponStampAngles: [0, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'Unforgivable',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kaname Tosen Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases the stacks of <span style="color: #EA4A86; text-decoration: underline;">Wound</span> inflicted from the technique of Suzumushi Thrust by 2, and from Tsuishiki - Suzumushi Thrust by 3.<br>-After releasing the Ultimate, the Ultimate button becomes active again. Tap it to release a follow-up attack, dealing DMG equal to <span style="color: #52C394;">2,400%</span> of ATK and instantly inflicting 6 stacks of <span style="color: #EA4A86; text-decoration: underline;">Wound</span>.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kaname Tosen Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases the stacks of <span style="color: #EA4A86; text-decoration: underline;">Wound</span> inflicted from the technique of Suzumushi Thrust by 2, and from Tsuishiki - Suzumushi Thrust by 3.<br>-After releasing the Ultimate, the Ultimate button becomes active again. Tap it to release a follow-up attack, dealing DMG equal to <span style="color: #52C394;">4,800%</span> of ATK and instantly inflicting 6 stacks of <span style="color: #EA4A86; text-decoration: underline;">Wound</span>.</p></p>'
         }
       },
       {
@@ -2163,17 +2140,17 @@ const CHARACTERS = [
     ],
     weaponStampPopupWidths: [null, null],
 
-    bonds1Imgs: ['images/aizen bond 1.webp'],
-    bonds1Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: green;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: green;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches <span style="color: green;">20% / 40% / 60%</span>.</div>`,
-    bonds1OffsetX: 10,
+    bonds1Imgs: ['images/gin bond 1.webp'],
+    bonds1Info: `<div style="text-align: center; font-weight: bold;"><p>Increases Technique DMG by <span style="color: #52C394;">32%</span> during battle. When <span style="color: #ffaa00;">Ailment</span><br><span style="color: #ffaa00;">DMG Bonus</span> is equal or higher than <span style="color: #52C394;">80%</span>, <span style="color: #ffaa00;">Ailment DMG Bonus</span> is<br>increased by extra <span style="color: #52C394;">80%</span>.</p>`,
+    bonds1OffsetX: 21,
     bonds1Height: 120,
-    bonds1PopupWidth: 480,
+    bonds1PopupWidth: 490,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
+    bonds2Imgs: ['images/aizen bond 1.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: #52C394;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: #52C394;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches<span style="color: #52C394;">20% / 40% / 60%</span>.</div>`,
     bonds2OffsetX: 14,
-    bonds2Height: 124,
-    bonds2PopupWidth: 430
+    bonds2Height: 118,
+    bonds2PopupWidth: 490
   },
   {
     id: 'hitsugaya',
@@ -2207,12 +2184,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/toshiro core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
-    coreStampAngles: [-2, 1, 3],
+    coreStampImgs: ['images/toshiro core.webp', 'images/toshiro core 2.webp', 'images/tosen core 3.webp'],
+    coreStampAngles: [-2, 0, 3],
     coreStampGaps: [80, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Floating Ice Bloom',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -2222,7 +2199,7 @@ const CHARACTERS = [
             { label: 'HP', value: '629' },
             { label: 'Spirit DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> to 12, with each <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> increasing the DMG and Crit DMG of the Ultimate Hyoten Hyakkaso by <span style="color: #52C394;">2%</span> and <span style="color: #52C394;">5%</span>. Releasing Hyoten Hyakkaso with 12 <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> grants an extra damage bonus by <span style="color: #52C394;">20%</span> of Ultimate Mastery.<br>-Basic Attacks deal <span style="color: #52C394;">20%</span> more DMG to targets affected by <span style="color: #EA4A86; text-decoration: underline;">Freeze Points</span>, and hitting targets charges <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms<span>.</p>'
         },
         max: {
           rows: [
@@ -2231,11 +2208,11 @@ const CHARACTERS = [
             { label: 'HP', value: '3150' },
             { label: 'Spirit DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> to 12, with each <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> increasing the DMG and Crit DMG of the Ultimate Hyoten Hyakkaso by <span style="color: #52C394;">6%</span> and <span style="color: #52C394;">15%</span>. Releasing Hyoten Hyakkaso with 12 <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms</span> grants an extra damage bonus by <span style="color: #52C394;">50%</span> of Ultimate Mastery.<br>-Basic Attacks deal <span style="color: #52C394;">80%</span> more DMG to targets affected by <span style="color: #EA4A86; text-decoration: underline;">Freeze Points</span>, and hitting targets charges <span style="color: #EA4A86; text-decoration: underline;">Ice Blossoms<span>.</p>'
         }
       },
       {
-        name: 'Lesson Three Cleared!',
+        name: 'To Reach Higher Places',
 		dividerColor: 'null',
         stars: 5,
         base: {
@@ -2245,7 +2222,7 @@ const CHARACTERS = [
             { label: 'HP', value: '566' },
             { label: 'All-Type DMG Bonus', value: '7.2%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">8%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>As the combo count goes up, the on-field character\'s basic attack DMG increases by <span style="color: #52C394;">6.5%</span>, up to 10 times. This effect disappears when the combo count resets to zero.</p>'
         },
         max: {
           rows: [
@@ -2254,11 +2231,11 @@ const CHARACTERS = [
             { label: 'HP', value: '2443' },
             { label: 'All-Type DMG Bonus', value: '15.3%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">16%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>As the combo count goes up, the on-field character\'s basic attack DMG increases by <span style="color: #52C394;">13%</span>, up to 10 times. This effect disappears when the combo count resets to zero.</p>'
         }
       },
       {
-        name: 'Back-to-Back Combat',
+        name: 'Rushing Into Danger',
         dividerColor: '#8f5cff',
         stars: 4,
         base: {
@@ -2268,7 +2245,7 @@ const CHARACTERS = [
             { label: 'HP', value: '503' },
             { label: 'All-Type DMG Bonus', value: '6.4%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Ultimate.</p>'
         },
         max: {
           rows: [
@@ -2277,41 +2254,41 @@ const CHARACTERS = [
             { label: 'HP', value: '1824' },
             { label: 'All-Type DMG Bonus', value: '11.2%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Ultimate.</p>'
         }
       }
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
+    setStampBeforeText: '<p><span style="color: #EA4A86;">-The recommended passives for Toshiro Hitsugaya - Spirit are:</span><br>1) Overdrive - Full Assault<br>2) Enhanced Damage<br>3) Enhanced Basic Attack - Full Assault<br>4) Enhanced Ultimate</p><p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>At B2, Toshiro gains <span style="color: #52C394;">40%</span> Crit Rate (<span style="color: #52C394;">20%</span> stacking 2x). Paired with his weapon stamp providing <span style="color: #52C394;">30%</span>, his slot 2 now favors CRIT DMG over CRIT RATE.</p>',
     setStampImgs: ['images/toshiro set 1.webp', 'images/toshiro set 2.webp', 'images/toshiro set 3.webp'],
     setStampAngles: [0, 0, -3],
-    setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampGaps: [30, 50],
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Spirit DMG Bonus%<br>2) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > ATK% > ATK > Ult%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crit Rate%<br>2) Crit Dmg%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > ATK% > ATK > Ult%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR = CDMG > ATK% > ATK > Ult%</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">World Conquest (3/3) </span><br>2-Piece: Increases Spirit DMG by <span style="color: #52C394;">11%</span>.<br>3-Piece: Increases Ultimate DMG by <span style="color: #52C394;">30%</span>. Each time a technique is released, increases basic attack DMG by <span style="color: #52C394;">36%</span> for 8s. Unstackable.</p>',
 
     weaponStampImgs: ['images/toshiro weapon.webp', 'images/aizen weapon 2.webp'],
     weaponStampAngles: [-3, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'Crimson Ice Dragon',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Toshiro Hitsugaya Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Crit Rate increases by <span style="color: #52C394;">30%</span>.<br>-During <span style="color: #EA4A86; text-decoration: underline;">Tenso Jyurin</span>, basic attack damage is increased by <span style="color: #52C394;">50%</span>, damage taken is reduced by <span style="color: #52C394;">25%</span> while using basic attacks, and they cannot be interrupted.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Toshiro Hitsugaya Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Crit Rate increases by <span style="color: #52C394;">60%</span>.<br>-During <span style="color: #EA4A86; text-decoration: underline;">Tenso Jyurin</span>, basic attack damage is increased by <span style="color: #52C394;">100%</span>, damage taken is reduced by <span style="color: #52C394;">50%</span> while using basic attacks, and they cannot be interrupted.</p></p>'
         }
       },
       {
@@ -2342,10 +2319,10 @@ const CHARACTERS = [
     bonds1Height: 120,
     bonds1PopupWidth: 480,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
-    bonds2OffsetX: 14,
-    bonds2Height: 124,
+    bonds2Imgs: ['images/toshiro bond 2.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases Crit DMG during battle by <span style="color: #52C394;">30%</span>.</div>`,
+    bonds2OffsetX: 18,
+    bonds2Height: 118,
     bonds2PopupWidth: 430
   },
   {
@@ -2380,12 +2357,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/kenpachi core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
-    coreStampAngles: [-2, 1, 3],
+    coreStampImgs: ['images/kenpachi core.webp', 'images/kenpachi core 2.webp', 'images/tosen core 3.webp'],
+    coreStampAngles: [-2, 0, 3],
     coreStampGaps: [80, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Fight To The Death',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -2393,22 +2370,22 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Slash DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-When casting the Ultimate, Full Power, all enemies are inflicted with <span style="color: #EA4A86; text-decoration: underline;">Cleave</span>. If enemies are already affected by <span style="color: #EA4A86; text-decoration: underline;">Cleave</span>, its duration is extended by 8 seconds.<br>While War Wraith is active, each basic attack hit increases the damage of the next Ultimate, "Kendo", by <span style="color: #52C394;">10%</span>, stacking up to 10 times.<br>Releasing the technique, Spiritual Pressure Burst, and its follow-up attacks grants 1 stack of buff that increases Technique DMG by <span style="color: #52C394;">25%</span> for 5 seconds, stacking up to 2 times.<br>When casting the Special Attack, Rampage Raid, gain 1 stack of a buff that increases Crit Rate by <span style="color: #52C394;">10%</span> for 30 seconds, stacking up to 2 times.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Slash DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>No Data.</p>'
         }
       },
       {
-        name: 'Lesson Three Cleared!',
+        name: 'I\'ve Noticed You For A While',
 		dividerColor: 'null',
         stars: 5,
         base: {
@@ -2418,7 +2395,7 @@ const CHARACTERS = [
             { label: 'HP', value: '566' },
             { label: 'All-Type DMG Bonus', value: '7.2%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">8%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>Increases the damage dealt by the special attack by <span style="color: #52C394;">25%</span>. Each time a Technique is released, increases the special attack DMG by an additional <span style="color: #52C394;">12.5%</span>, up to <span style="color: #52C394;">25%</span>.</p>'
         },
         max: {
           rows: [
@@ -2427,11 +2404,11 @@ const CHARACTERS = [
             { label: 'HP', value: '2443' },
             { label: 'All-Type DMG Bonus', value: '15.3%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">16%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>Increases the damage dealt by the special attack by <span style="color: #52C394;">50%</span>. Each time a Technique is released, increases the special attack DMG by an additional <span style="color: #52C394;">25%</span>, up to <span style="color: #52C394;">50%</span>.</p>'
         }
       },
       {
-        name: 'Back-to-Back Combat',
+        name: 'Rushing Into Danger',
         dividerColor: '#8f5cff',
         stars: 4,
         base: {
@@ -2441,7 +2418,7 @@ const CHARACTERS = [
             { label: 'HP', value: '503' },
             { label: 'All-Type DMG Bonus', value: '6.4%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Ultimate.</p>'
         },
         max: {
           rows: [
@@ -2450,45 +2427,45 @@ const CHARACTERS = [
             { label: 'HP', value: '1824' },
             { label: 'All-Type DMG Bonus', value: '11.2%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Ultimate.</p>'
         }
       }
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
+    setStampBeforeText: '<p><span style="color: #EA4A86;">-The recommended passives for Kenpachi Zaraki - Slash are:</span><br>1) Overdrive - Full Assault<br>2) Enhanced Damage<br>3) Enhanced Ultimate<br>4) Enhanced Technique</p><p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>Zaraki Kenpachi at B2 gets a <span style="color: #52C394;">30%</span> crit rate boost (requiring <span style="color: #52C394;">60%</span> Ailment Bonus), and his core stamp provides <span style="color: #52C394;">20%</span>. Thus, at b2, you should be using a CRIT DMG slot 2 mainstat, and aim to get the remaining <span style="color: #52C394;">50%</span> through substats.</p>',
     setStampImgs: ['images/kenpachi set 1.webp', 'images/kenpachi set 2.webp', 'images/kenpachi set 3.webp'],
     setStampAngles: [0, 0, -3],
     setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Slash DMG Bonus%<br>2) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ailment DMG Bonus% > Ult Charge Rate% > ATK%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crit Rate%<br>2) Crit DMG%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ailment DMG Bonus% > Ult Charge Rate% > ATK%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ultimate Charge Rate%(For B0 and B1)<br>2) Ailment DMG%(For B2 and Higher)</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ailment DMG Bonus% > Ult Charge Rate% > ATK%</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">Ready To GO (3/3) </span><br>2-Piece: Increases Base ATK by <span style="color: #52C394;">20%</span>.<br>3-Piece: Increases Crit DMG by <span style="color: #52C394;">50%</span>. Each time Cleave is applied to an enemy, the Ailment DMG dealt by your Sever Attacks is increased by <span style="color: #52C394;">12%</span>. This effect lasts for 30 seconds and stacks up to 3 times.</p>',
 
-    weaponStampImgs: ['images/kenpachi weapon.webp', 'images/aizen weapon 2.webp'],
+    weaponStampImgs: ['images/kenpachi weapon.webp', 'images/kenpachi weapon 2.webp'],
     weaponStampAngles: [-3, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'Blade Of Lament',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kenpachi Zaraki Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-No Data.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Kenpachi Zaraki Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Still No Data..</p></p>'
         }
       },
       {
-        name: 'Chanting Spirit',
+        name: 'Sundering Slash',
 		dividerColor: '#8f5cff',
         stars: 0,
         base: {
@@ -2496,14 +2473,14 @@ const CHARACTERS = [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Slash DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Slash DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
         }
       },
     ],
@@ -2515,8 +2492,8 @@ const CHARACTERS = [
     bonds1Height: 120,
     bonds1PopupWidth: 480,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
+    bonds2Imgs: ['images/gin bond 1.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;"><p>Increases Technique DMG by <span style="color: #52C394;">32%</span> during battle. When <span style="color: #ffaa00;">Ailment</span><br><span style="color: #ffaa00;">DMG Bonus</span> is equal or higher than <span style="color: #52C394;">80%</span>, <span style="color: #ffaa00;">Ailment DMG Bonus</span> is<br>increased by extra <span style="color: #52C394;">80%</span>.</p>`,
     bonds2OffsetX: 14,
     bonds2Height: 124,
     bonds2PopupWidth: 430
@@ -2553,12 +2530,12 @@ const CHARACTERS = [
     statsGaps:    [80,80],
     statsHeights: [80,80,80],
 
-    coreStampImgs: ['images/ikkaku core.webp', 'images/aizen core 2.webp', 'images/aizen core 3.webp'],
-    coreStampAngles: [-2, 1, 3],
+    coreStampImgs: ['images/ikkaku core.webp', 'images/kenpachi core 2.webp', 'images/ikkaku core 3.webp'],
+    coreStampAngles: [-2, 0, 3],
     coreStampGaps: [80, 80],
     coreStampPopupData: [
       {
-        name: 'Unrivaled',
+        name: 'Fight Till End',
 		dividerColor: 'null',
         stars: 6,
         base: {
@@ -2566,22 +2543,22 @@ const CHARACTERS = [
             { label: 'ATK', value: '125' },
             { label: 'DEF', value: '105' },
             { label: 'HP', value: '629' },
-            { label: 'Spirit DMG Bonus', value: '8.0%' }
+            { label: 'Thrust DMG Bonus', value: '8.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">0.5%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">25%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">300%</span> more damage.</p>'
+          text: '<p>-While in Bankai, eachi time a special Attack\'s Follow-up Attack is triggered, the next <span style="color: #EA4A86; text-decoration: underline;">Slow Hozukimaru</span> gains a  <span style="color: #52C394;">50%</span> DMG Bonus.<br>-After entering Bankai, all DMG dealt by Ikkaku increases by  <span style="color: #52C394;">30%</span> for 15s.</p>'
         },
         max: {
           rows: [
             { label: 'ATK', value: '630' },
             { label: 'DEF', value: '525' },
             { label: 'HP', value: '3150' },
-            { label: 'Spirit DMG Bonus', value: '20.0%' }
+            { label: 'Thrust DMG Bonus', value: '20.0%' }
           ],
-          text: '<p>-Upon releasing the Ultimate, the on-field character gains 1 stack of Illusion. Each time that character lands a hit, they gain another stack of Illusion.</p><p>Each stack of Illusion increases their Spirit DMG by <span style="color: #52C394;">1%</span>, up to 10 stacks, lasting until <span style="color: #EA4A86; text-decoration: underline;">Kyokasuigetsu</span> ends.</p><p>-When a counterattack from switching characters is triggered by the passive Battle of Spiritual Pressure, the new on-field character inherits all Illusion stacks, and the cap is doubled, up to 40 stacks. Upon reaching full stacks, Illusion also grants an extra <span style="color: #52C394;">50%</span> Crit DMG bonus.</p><p>-While under the <span style="color: #EA4A86; text-decoration: underline;">Spiritual Domination</span>, Aizen\'s Basic Attacks, techniques, and counterattacks deal <span style="color: #52C394; ">500%</span> more damage.</p>'
+          text: '<p>-While in Bankai, eachi time a special Attack\'s Follow-up Attack is triggered, the next <span style="color: #EA4A86; text-decoration: underline;">Slow Hozukimaru</span> gains a  <span style="color: #52C394;">100%</span> DMG Bonus.<br>-After entering Bankai, all DMG dealt by Ikkaku increases by  <span style="color: #52C394;">60%</span> for 15s.</p>'
         }
       },
       {
-        name: 'Lesson Three Cleared!',
+        name: 'I\'ve Noticed You For A While',
 		dividerColor: 'null',
         stars: 5,
         base: {
@@ -2591,7 +2568,7 @@ const CHARACTERS = [
             { label: 'HP', value: '566' },
             { label: 'All-Type DMG Bonus', value: '7.2%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">8%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>Increases the damage dealt by the special attack by <span style="color: #52C394;">25%</span>. Each time a Technique is released, increases the special attack DMG by an additional <span style="color: #52C394;">12.5%</span>, up to <span style="color: #52C394;">25%</span>.</p>'
         },
         max: {
           rows: [
@@ -2600,11 +2577,11 @@ const CHARACTERS = [
             { label: 'HP', value: '2443' },
             { label: 'All-Type DMG Bonus', value: '15.3%' }
           ],
-          text: '<p>After releasing a Battlefield Skill, the entire team gains a <span style="color: #52C394;">16%</span> boost for all damage dealt that lasts for <span style="color: #52C394;">25</span>s.</p><p>Unstackable.</p>'
+          text: '<p>Increases the damage dealt by the special attack by <span style="color: #52C394;">50%</span>. Each time a Technique is released, increases the special attack DMG by an additional <span style="color: #52C394;">25%</span>, up to <span style="color: #52C394;">50%</span>.</p>'
         }
       },
       {
-        name: 'Back-to-Back Combat',
+        name: 'Gather Up! Thirteen Court Guard Squads',
         dividerColor: '#8f5cff',
         stars: 4,
         base: {
@@ -2614,7 +2591,7 @@ const CHARACTERS = [
             { label: 'HP', value: '503' },
             { label: 'All-Type DMG Bonus', value: '6.4%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a special attack is dealt, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">25%</span> of the current special attack.</p>'
         },
         max: {
           rows: [
@@ -2623,45 +2600,45 @@ const CHARACTERS = [
             { label: 'HP', value: '1824' },
             { label: 'All-Type DMG Bonus', value: '11.2%' }
           ],
-          text: '<p>Each time a Battlefield Skill is released, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current Battlefield Skill.</p>'
+          text: '<p>Each time a special attack is dealt, triggers one additional attack of the same type, dealing damage equal to <span style="color: #52C394;">50%</span> of the current special attack.</p>'
         }
       }
     ],
     coreStampPopupWidths: [null, null, null],
 
-    setStampBeforeText: '<p>The recommended passives for Sosuke Aizen - Spirit are:<br>1) Overdrive - Tactic<br>2) Enhanced Damage<br>3) Enhanced Battlefield Skill II</p><p>Boundary Dependant Build Changes:<br>At B6, Aizen doubles the crit rate of his battlefield skills. Thus, a CRIT DMG slot 2 is preferred with only a few crit rate substats.</p>',
+    setStampBeforeText: '<p><span style="color: #EA4A86;">NOTE:</span> Please do not six star the stamps of Ikkaku Madarame - Thrust, just wait for a worthy character to six star.</p><p><span style="color: #EA4A86;">-Boundary Dependant Build Changes:</span><br>Build does not change with dupes.</p>',
     setStampImgs: ['images/ikkaku set 1.webp', 'images/ikkaku set 2.webp', 'images/ikkaku set 3.webp'],
     setStampAngles: [0, 0, -3],
     setStampGaps: [30, 90],
-    setStampInfos: ['Set stamp 1 – Kyoka Suigetsu fragment', 'Set stamp 2 – Hogyoku essence', 'Set stamp 3 – Reiatsu overflow'],
-    setStampPopupWidths: [null, null, null],
-    setStampAfterText: '',
+    setStampInfos: ['<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Thrust DMG Bonus%<br>2) ATK%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > Ailment Bonus%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Crit Rate%<br>2) Crit Dmg%</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > Ailment Bonus%</p>', '<p><span style="color: #EA4A86;">-The recommended Mainstats are:</span><br>1) Ult Charge Rate%<br>2) Ailment Bonus%(To improve the damage of his wound Debuff)</p><p><span style="color: #EA4A86;">-Substats:</span><br>CR% = CDMG% > Ult Charge Rate% > ATK% > Ailment Bonus%</p>'],
+    setStampPopupWidths: [380, 380, 380],
+    setStampAfterText: '<p><span style="color: #EA4A86;">Unyielding Light (3/3) </span><br>2-Piece: Increases Thrust DMG by <span style="color: #52C394;">11%</span>.<br>3-Piece: Increases special attack DMG by <span style="color: #52C394;">30%</span>. Each time a special attack is released, increases Ultimate DMG by <span style="color: #52C394;">14%</span> for 15s. Stacks up to 2 times.</p>',
 
-    weaponStampImgs: ['images/ikkaku weapon.webp', 'images/aizen weapon 2.webp'],
+    weaponStampImgs: ['images/ikkaku weapon.webp', 'images/gin weapon 2.webp'],
     weaponStampAngles: [-3, 5],
     weaponStampGaps: [90],
     weaponStampPopupData: [
       {
-        name: 'Before We Realized',
+        name: 'When The Ryumon Turns Red',
 		dividerColor: 'null',
         stars: 0,
         base: {
           rows: [
 			{ label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Increases Crit Rate by <span style="color: #52C394;">25%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">12.5%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">1%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Ikkaku Madarame Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>-Upon entering Bankai, ikkau\'s Spiritual Pressure is instantly filled to the maximum.<br>-While in Bankai state, special attack DMG increases by  <span style="color: #52C394;">100%</span>.<br>-While in Bankai state, each basic attack increases the ASPD of the next basic attack by  <span style="color: #52C394;">15%</span> for 8s. Stacks up to 4 times.</p></p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '50%' },
           ],
-          note: 'Sosuke Aizen Exclusive Effect',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Increases Crit Rate by <span style="color: #52C394;">50%</span>.</p><p>-Increases the damage of counterattacks triggered by the passive battle of Spiritual Pressure by <span style="color: #52C394;">25%</span>.</p><p>-Increases the cap of <span style="color: #EA4A86; text-decoration: underline">Enhanced Pressure Stacks</span> to 6. If the Battlefield Skill Hado 90: Kurohitsugi consumes all 6 stacks at once, an extra counterattack from switching teammates will be triggered.</p><p>-Each stack of <span style="color: #EA4A86; text-decoration: underline">Ravage</span> reduces the enemy\'s Spirit Resistance by an extra <span style="color: #52C394;">2%</span>.</p><p>-Releasing any Battlefield Skill grants 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>. While not under <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>, if fewer than 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possesed, obtaining them immediatly activates the <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span>. if exactly 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span> are possessed, entering <span style="color: #EA4A86; text-decoration: underline">Spiritual Domination</span> grants another 3 <span style="color: #EA4A86; text-decoration: underline">Pressure Stacks</span>.</p></p>'
+          note: 'Ikkaku Madarame Exclusive Effect',
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>-Upon entering Bankai, ikkau\'s Spiritual Pressure is instantly filled to the maximum.<br>-While in Bankai state, special attack DMG increases by  <span style="color: #52C394;">300%</span>.<br>-While in Bankai state, each basic attack increases the ASPD of the next basic attack by  <span style="color: #52C394;">15%</span> for 8s. Stacks up to 4 times.</p></p>'
         }
       },
       {
-        name: 'Chanting Spirit',
+        name: 'Piercing Thrust',
 		dividerColor: '#8f5cff',
         stars: 0,
         base: {
@@ -2669,30 +2646,30 @@ const CHARACTERS = [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 1</span><p>After dealing Thrust DMG, Base ATK increases by <span style="color: #52C394;">15%</span> for 12s. Unstackable.</p>'
         },
         max: {
           rows: [
             { label: 'Weapon Stats Boost', value: '25.0%' },
           ],
           note: 'Applicable to all characters',
-          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Spirit DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p></p>'
+          text: '<p><span style="color: #EA4A86;">Ascencion Stage 5</span><p>After dealing Thrust DMG, Base ATK increases by <span style="color: #52C394;">30%</span> for 12s. Unstackable.</p>'
         }
       },
     ],
     weaponStampPopupWidths: [null, null],
 
-    bonds1Imgs: ['images/aizen bond 1.webp'],
-    bonds1Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: green;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: green;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches <span style="color: green;">20% / 40% / 60%</span>.</div>`,
-    bonds1OffsetX: 10,
+    bonds1Imgs: ['images/toshiro bond 2.webp'],
+    bonds1Info: `<div style="text-align: center; font-weight: bold;">Increases Crit DMG during battle by <span style="color: #52C394;">30%</span>.</div>`,
+    bonds1OffsetX: 22,
     bonds1Height: 120,
     bonds1PopupWidth: 480,
 
-    bonds2Imgs: ['images/aizen bond 2.webp'],
-    bonds2Info: `<div style="text-align: center; font-weight: bold;">Increases all damage by <span style="color: green;">10%</span> during battle. When equipped by a <span style="color: #ffaa00;">Tactic</span> character, increases an extra <span style="color: green;">25%</span> Battlefield Skill DMG.</div>`,
+    bonds2Imgs: ['images/aizen bond 1.webp'],
+    bonds2Info: `<div style="text-align: center; font-weight: bold;">During battle, DMG dealt increases by <span style="color: green;">5.6% (Next: 8%)</span>.<br>This increases to <span style="color: green;">8.4% (Next: 12%) / 11.2% (Next: 16%) / 14% (Next: 20%)</span><br>if Crit Rate reaches <span style="color: green;">20% / 40% / 60%</span>.</div>`,
     bonds2OffsetX: 14,
     bonds2Height: 124,
-    bonds2PopupWidth: 430
+    bonds2PopupWidth: 490
   },
   {
     id: 'grimmjow',
@@ -4006,6 +3983,16 @@ const TERM_GLOSSARY = {
   'Technique Point(s)': '<p>When Gin charges and releases his Technique, he constantly consumes Technique Points to boost its power.<br>Recovers 1 Techinque Point every 10 seconds.<br>Can be stacked up to 3 points.</p>',
   Deathmark: 'When another character in the team lands an attack, Deathmark is automatically consumed to trigger the combo attack, which is one of the Battlefield Skills.',
   Sting: 'Deals Ailment DMG based on Soi Fon\'s ATK.',
+  Excitement: 'Each time Poison is triggered, the entire team gains Excitement, which increases Ailment Mastery.',
+  'All-Skill Mastery': 'Increases all skill damage by a certain percentage, including damage dealt by Basic Attacks, Special Attacks, Techniques, Battlefield Skills, Ultimates and Counters.',
+  'Build Up': 'When Komamura releases the Battlefield Skill Tenken Ascension - Charged Strike, extra attacks are launched according to the number of Build Up stacks.',
+  Wound: 'Deals DMG equal to <span style="color: #52C394;">2%</span> of the character\'s ATK every second. The more stacks, the higher the DMG. Lasts for 10s and can be stacked up to 30 times.',
+  'Ice Blossoms': 'Ultimate Hyuoten Hyakkaso\'s DMG increases based on Ice Blossoms consumed.',
+  'Freeze Points': 'At 100, the enemy will be frozen and become immovable for 2s.',
+  'Tenso Jyurin': 'After releasing the Technique Ice Dragon Dive, Toshiro enters Tenso Jyurin, during which his basic attacks are replaced by Ice Dragon Lunge.',
+  Cleave: 'Sever Attacks apply Sever Points to the enemy. Upon reaching 100 Sever Points, the enemy is inflicted with the debuff, Cleave.<br>Applying Sever Attacks to enemies affected by Cleave deals extra Ailment DMG.',
+  Frenzy: 'Some of Kenpachi\'s attacks generate Frenzy.<br>When Frenzy reaches 2 points,tap and hold Basic Attack to release a Special Attack.',
+  'Slow Hozukimaru': 'The second phase of Ikkaku\'s Ultimate deals huge DMG and removes Bankai state.',
 };
 
 function normalizeTermName(text) {
